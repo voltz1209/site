@@ -1,0 +1,195 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    color: #333;
+    position: relative;
+}
+
+
+.gradient-background {
+    background: linear-gradient(45deg, #ff758c, #ff4c69, #ff8a00, #6a1b9a); /* Degradê vibrante */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; /* Animação suave do degradê */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.input-field {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    font-size: 1em;
+    width: 250px;
+}
+
+.btn-hover {
+    background: #ff758c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+    background: #ff4c69;
+}
+
+.error-message {
+    color: #ff4c69;
+    margin-top: 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.category-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 15px;
+    font-size: 1.2em;
+    color: white;
+    background: linear-gradient(135deg, #f79c42, #f41d71);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-btn:hover {
+    background: linear-gradient(135deg, #ff758c, #6a1b9a);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ff758c;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.products {
+    padding: 50px 20px;
+    background: url('https://www.transparenttextures.com/patterns/flower-dust.png'), linear-gradient(45deg, #e91e63, #f44336); 
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
